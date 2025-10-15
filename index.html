@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="fabicon.png">
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "zbyodFtT6vR_2t-vX",
+      });
+   })();
+</script>
+
+<script src="mail.js"></script>
+
+</head>
+<body>
+    <header id="header">
+
+<a href="#home" class="logo">
+    M <span>Qais</span>
+</a>
+
+<i class="fa-solid fa-bars" id="menu-icon"></i> 
+
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <button class="gradient-btn" ><a href="#contact" style="color: white;">Contact Me</a></button>
+  
+
+
+    </header>
+
+<section class="home" id="home">
+
+    <video autoplay muted loop playsinline preload="auto" id="bg-video">
+    <source src="coding3.mp4" type="video/mp4">
+  </video>
+    <div class="home-content">
+        <h1 id="name1">Hello, my name is Muhammed <span>Qais</span></h1>
+        <h3>I'm a <span>Web Dev</span></h3>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reprehenderit possimus non asperiores quos 
+            <br>quasi, nemo quod? Sit modi perferendis porro ipsa sequi, nesciunt nulla, cum fuga assumenda illum reiciendis!</p> -->
+        <div class="social-icons">
+            <a href="https://github.com/qaismon" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/muhammed-qais-mon" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://x.com/qaismon127" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+
+        <div class="btn-group">
+            <a href="#contact" class="btn" >Contact</a>
+        </div>
+
+    </div>
+    <!-- <div class="home-img">
+        <img src="img.jpg" alt="img">
+    </div> -->
+
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+    <!-- <img src="img.jpg" alt=""> -->
+     <div class="about-icons">
+        <i class="fa-brands fa-square-js"></i>
+     <i class="fa-brands fa-html5"></i>
+    <i class="fa-brands fa-css3-alt"></i>
+     
+     
+        </div>
+
+    </div>
+
+    <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>“ I'm a passionate Web Developer with experience in HTML, CSS, and JavaScript. I love turning ideas into responsive, user-friendly websites. I’m constantly learning and exploring new technologies to build modern web experiences. ”</p>
+    <a href="cv.html" class="cv-btn" style="width: 180px; margin-top: 20px;" target="_blank">View Resume</a>
+    </div>
+
+</section>
+
+
+<section class="services" id="services">
+
+    <h2 class="heading">Skills</h2>
+
+    <div class="services-container">
+
+            <div class="service-box">
+            <div class="service-info">
+                <i class="fa-solid fa-code"></i>
+                <h4>Frontend Development</h4>
+                <p>I specialize in building responsive and interactive user interfaces using HTML, CSS, and JavaScript. My focus is on creating seamless user experiences, clean layouts, and engaging designs that work across devices.</p>
+            </div>
+            </div>
+            <div class="service-box">
+            <div class="service-info">
+                <i class="fa-solid fa-code-branch"></i>
+                <h4>Backend Development</h4>
+                <p>I develop efficient and scalable server-side applications, handling databases, APIs, and server logic. I ensure secure data management and smooth communication between the frontend and backend to create fully functional web applications.</p>
+            </div>
+            </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="heading"> Projects</h2>
+    <div class="project-box">
+        <div class="project-card">
+            <img src="project 1.PNG" alt="project pics">
+            <h3>Ixigo Home Page Clone</h3>
+            <p>Developed a responsive clone of the Ixigo homepage using HTML and CSS.<br> Focused on replicating the layout, design, and structure to improve<br> my front-end development and UI design skills.</p>
+            <a href="project/home.html" target="_blank"><div class="btn">View Project</div></a>
+        
+        </div>
+    </div>
+
+    <div class="project-box">
+        <div class="project-card">
+            <img src="project 2.PNG" alt="project pics">
+            <h3>W3 Schools Navbar</h3>
+            <p>Built a functional clone of the W3Schools navigation bar using HTML and CSS.<br> Focused on recreating the layout, dropdown menus, and hover effects<br> to strengthen my understanding of front-end structure and styling.</p>
+          <a href="nav bar/home.html" target="_blank"><div class="btn">View Project</div></a>
+        
+        </div>
+    </div>
+
+    <div class="project-box">
+        <div class="project-card">
+            <img src="ss portfolio.PNG" alt="project pics">
+            <h3>Portfolio</h3>
+            <p>Designed and developed a personal portfolio website using HTML, CSS, and<br> JavaScript. It features a responsive layout, smooth animations, and dynamic<br> sections to showcase my skills, projects, and contact details.</p>
+           <a href="html.html" target="_blank"> <div class="btn">View Project</div></a>
+        
+        </div>
+    </div>
+
+
+</section>
+
+<section class="contacts" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    
+    <form action="#">
+
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Number" id="number" required>
+                <input type="text" placeholder="Subject" id="Subject" required>
+            </div>
+           
+        </div>
+
+                <div class="input-group-2">
+                    <textarea name="textarea" id="textarea" placeholder= "Your Message" cols="30" rows="10"></textarea>
+<input type="button" value="Send Message" class="btn" onclick="sendMail()">
+    </form>
+
+   
+</section>
+
+
+<footer class="footer">
+
+        <div class="social-icons">
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+
+<ul class="list">
+    
+    <li>
+        <a href="#services">Skills</a>
+    </li>
+
+    <li>
+        <a href="#about">About me</a>
+    </li>
+
+    <li>
+        <a href="#projects">Projects</a>
+    </li>
+
+    <li>
+        <a href="#contact">Contacts</a>
+    </li>
+
+</ul>
+
+<p class="copyright">
+    M Qais © | All Rights Reserved
+</p>
+</footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
