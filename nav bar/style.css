@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);
+}
+
+header{
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.logo{
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+   align-items: center;
+   margin: 10px;
+/* bottom: 10px; */
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+
+}
+
+.hleft {
+    display: flex;
+    height: 100%;
+    /* padding-right: 1; */
+    
+}
+
+
+.hleft a {
+   
+    display: flex;
+    align-items: center; 
+    padding: 0 15px; 
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    height: 100%;
+}
+
+.hleft a:hover{
+    background-color: rgb(39, 175, 39);
+    color: white;
+
+}
+
+.search input{
+
+border-radius: 20px;
+padding: 6px 10px;
+border:  solid gray;
+
+
+}
+
+.search input:focus{
+    border: 5px solid rgb(29, 172, 29);
+}
+
+.hright{
+  display: flex;
+  align-items: center;
+    height: 100%;
+    margin-left: auto;
+    
+}
+
+.hright a{
+  
+    display: flex;
+    align-items: center; 
+    padding: 0 15px; 
+    justify-content: end;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    height: 100%;
+
+
+    
+    
+
+}
+
+.hright a:hover{
+    background-color: rgb(39, 175, 39);
+    color: white;
+
+}
+
+.sline{
+    height: 30px;
+    background-color:rgb(52, 52, 75);
+    display: flex;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+
+
+
+}
+
+.sline li:hover{
+    background-color: rgb(10, 10, 27);
+
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none ;
+
+
+}
+
+.line li{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    padding: 0px 17px;
+    height: 100%;
+    font-size: 13px;
+}
+
+.settings{
+    padding: 0px 0px 100pxx;
+}
+
+.si{
+    background-color: rgb(41, 151, 41);
+    height: 30px;
+    width: 80px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    margin:15px;
+
+}
+
+.si:hover{
+    background-color: rgb(22, 31, 22);
+}
+
+.mainbody{
+    height: 5000px;
+    background-color:rgb(229, 229, 238);
+    display: flex;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+
+}
+
+.mainbody {
+
+    display: flex;
+    text-align: center;
+    color: rgb(204, 15, 15);
+}
+
