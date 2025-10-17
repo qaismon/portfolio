@@ -3,7 +3,6 @@ function sendMail() {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         number: document.getElementById("number").value,
-        subject: document.getElementById("Subject").value, // Capital S to match HTML
         message: document.getElementById("textarea").value,
     };
 
@@ -15,4 +14,5 @@ function sendMail() {
         alert("Failed to send message. Please try again.");
         console.log("FAILED...", error);
     });
+
 }
