@@ -1,29 +1,3 @@
-// ===== CUSTOM CURSOR =====
-const cursor = document.getElementById('cursor');
-const follower = document.getElementById('cursor-follower');
-
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    setTimeout(() => {
-        follower.style.left = e.clientX + 'px';
-        follower.style.top = e.clientY + 'px';
-    }, 80);
-});
-
-document.querySelectorAll('a, button, input, textarea').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-        follower.style.width = '50px';
-        follower.style.height = '50px';
-        follower.style.borderColor = 'rgba(232,98,42,0.8)';
-    });
-    el.addEventListener('mouseleave', () => {
-        follower.style.width = '32px';
-        follower.style.height = '32px';
-        follower.style.borderColor = 'rgba(232, 98, 42, 0.4)';
-    });
-});
-
 // ===== MOBILE MENU =====
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
