@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Qais — Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({ publicKey: "zbyodFtT6vR_2t-vX" });
+        })();
+    </script>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- NOISE OVERLAY -->
+<div class="noise"></div>
+
+<!-- HEADER -->
+<header id="header">
+    <a href="#home" class="logo">QS<span class="logo-dot">.</span></a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="header-cta">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-grid-lines"></div>
+    <div class="home-content">
+        <div class="home-tag"><span class="tag-dot"></span>Available for work</div>
+        <h1 class="home-title">
+            <span class="title-line">Muhammed</span>
+            <span class="title-line accent-line">Qais</span>
+        </h1>
+        <div class="home-role">
+            <span class="role-bracket">&lt;</span>
+            <span class="role-text" id="typewriter"></span>
+            <span class="role-cursor">|</span>
+            <span class="role-bracket">/&gt;</span>
+        </div>
+        <p class="home-desc">Backend-focused developer building scalable REST APIs, real-time systems, and full-stack applications with Node.js, Express & MongoDB.</p>
+        <div class="home-actions">
+            <a href="#projects" class="btn-primary">View Work</a>
+            <a href="#contact" class="btn-ghost">Get In Touch</a>
+        </div>
+        <div class="home-socials">
+            <a href="https://github.com/qaismon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/muhammed-qais-mon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/qaismon127" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+    <div class="home-visual">
+        <div class="code-window">
+            <div class="code-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="file-name">server.js</span>
+            </div>
+            <pre class="code-content"><code><span class="c-kw">const</span> <span class="c-fn">express</span> = <span class="c-fn">require</span>(<span class="c-str">'express'</span>);
+<span class="c-kw">const</span> <span class="c-fn">app</span> = <span class="c-fn">express</span>();
+
+<span class="c-comment">// Real-time with Socket.io</span>
+<span class="c-kw">const</span> io = <span class="c-fn">socketio</span>(server);
+
+<span class="c-fn">app</span>.<span class="c-fn">use</span>(<span class="c-str">'/api'</span>, routes);
+
+<span class="c-comment">// JWT Auth middleware</span>
+<span class="c-fn">app</span>.<span class="c-fn">use</span>(authenticate);
+
+<span class="c-fn">app</span>.<span class="c-fn">listen</span>(<span class="c-num">5000</span>, () => {
+  console.<span class="c-fn">log</span>(<span class="c-str">'Server running 🚀'</span>);
+});</code></pre>
+        </div>
+        <div class="stat-card stat-1">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-card stat-2">
+            <span class="stat-num">Full</span>
+            <span class="stat-label">Stack Dev</span>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="about-left">
+        <div class="about-badge">About Me</div>
+        <h2>Backend architect,<br><span>frontend aware.</span></h2>
+        <p>I'm a Software Developer intern at Bridgeon Solutions, Kerala, building production-grade REST APIs, real-time features, and full-stack applications. I care about clean architecture, scalable systems, and writing code that performs.</p>
+        <p>Previously worked as a Customer Support Associate at Elaf Fresh E-Commerce in Dubai — where I bridged customers and dev teams, reported bugs, and built an understanding of real-world product behavior.</p>
+        <div class="about-actions">
+            <a href="Muhammed_Qais_CV.pdf" download class="btn-ghost">Download CV</a>
+        </div>
+    </div>
+    <div class="about-right">
+        <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+                <h4>Software Developer Intern</h4>
+                <p>Bridgeon Solutions · Kerala, India</p>
+                <span>Aug 2025 – Present</span>
+            </div>
+        </div>
+        <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-headset"></i></div>
+            <div>
+                <h4>Customer Support Associate</h4>
+                <p>Elaf Fresh E-Commerce · Dubai, UAE</p>
+                <span>Apr 2022 – May 2023</span>
+            </div>
+        </div>
+        <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+                <h4>BSc. Business Management</h4>
+                <p>Westford University College · Sharjah, UAE</p>
+                <span>In Progress</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <div class="section-header">
+        <div class="about-badge">Technical Skills</div>
+        <h2>What I work with</h2>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-brands fa-js"></i>
+                <h4>Languages</h4>
+            </div>
+            <div class="skill-tags">
+                <span>JavaScript (ES6+)</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-layer-group"></i>
+                <h4>Frontend</h4>
+            </div>
+            <div class="skill-tags">
+                <span>React.js</span>
+                <span>Next.js</span>
+                <span>Redux</span>
+                <span>Tailwind CSS</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-server"></i>
+                <h4>Backend</h4>
+            </div>
+            <div class="skill-tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>REST APIs</span>
+                <span>JWT Auth</span>
+                <span>MVC Architecture</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-database"></i>
+                <h4>Database</h4>
+            </div>
+            <div class="skill-tags">
+                <span>MongoDB</span>
+                <span>Aggregation</span>
+                <span>Indexing</span>
+                <span>Query Optimization</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-bolt"></i>
+                <h4>Real-Time</h4>
+            </div>
+            <div class="skill-tags">
+                <span>WebSockets</span>
+                <span>Socket.io</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-cat-header">
+                <i class="fa-solid fa-tools"></i>
+                <h4>DevOps & Tools</h4>
+            </div>
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Docker (Basic)</span>
+                <span>Postman</span>
+                <span>Render</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <div class="section-header">
+        <div class="about-badge">Projects</div>
+        <h2>Things I've built</h2>
+    </div>
+    <div class="projects-list">
+
+        <div class="project-item featured">
+            <div class="project-meta">
+                <span class="project-num">01</span>
+                <span class="project-type">Full Stack · Real-Time · AI</span>
+            </div>
+            <div class="project-body">
+                <h3>RevChat</h3>
+                <p class="project-subtitle">AI Code Review & Collaboration Platform</p>
+                <p class="project-desc">Real-time developer chat platform with end-to-end encryption (RSA-OAEP + AES-GCM). Integrated Groq Cloud LLM for in-chat AI code reviews with structured feedback across Security, Performance, and Code Style. Supports group sessions, typing indicators, and delivered/seen receipts.</p>
+                <div class="project-tech">
+                    <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span><span>Groq AI</span><span>RSA-OAEP</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/qaismon/revchat" class="btn-primary" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>
+            <div class="project-glow"></div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-meta">
+                <span class="project-num">02</span>
+                <span class="project-type">Full Stack · E-Commerce</span>
+            </div>
+            <div class="project-body">
+                <h3>Gainlabz</h3>
+                <p class="project-subtitle">Full Stack E-Commerce Application</p>
+                <p class="project-desc">Production-grade e-commerce platform with complete product catalog, cart management, and user authentication. JWT-based access control, MongoDB data modeling with optimized queries, and cloud media storage via UploadThing CDN.</p>
+                <div class="project-tech">
+                    <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Tailwind CSS</span><span>JWT</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://gainlabz.onrender.com" class="btn-primary" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="project-glow"></div>
+        </div>
+
+       
+
+        
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="contact-inner">
+        <div class="contact-left">
+            <div class="about-badge">Contact</div>
+            <h2>Let's build<br><span>something great.</span></h2>
+            <p>Have a project, opportunity, or just want to connect? My inbox is open.</p>
+            <div class="contact-info">
+                <a href="mailto:qaismon127@gmail.com"><i class="fa-solid fa-envelope"></i> qaismon127@gmail.com</a>
+                <a href="tel:+917025211871"><i class="fa-solid fa-phone"></i> +91 70252 11871</a>
+                <span><i class="fa-solid fa-location-dot"></i> Kerala, India</span>
+            </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Phone (optional)</label>
+                <input type="tel" id="number" placeholder="+91 00000 00000">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="textarea" placeholder="Tell me about your project..." rows="6" required></textarea>
+            </div>
+            <button type="button" class="btn-primary send-btn" onclick="sendMail()">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="form-status"></div>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <a href="#home" class="logo">QS<span class="logo-dot">.</span></a>
+        <p>Backend-focused developer. Building with Node.js, Express & MongoDB.</p>
+        <div class="footer-socials">
+            <a href="https://github.com/qaismon" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/muhammed-qais-mon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/qaismon127" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="footer-copy">© 2025 Muhammed Qais. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
